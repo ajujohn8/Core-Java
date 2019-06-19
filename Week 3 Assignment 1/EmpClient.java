@@ -35,22 +35,14 @@ class EmpClient{
     if(employeeType.equalsIgnoreCase("Regular")){
     
 
-        EmpRegular empReg = new EmpRegular(leave);
-        int leaveBalanceRegular = execute(empReg);
-        if(leaveBalanceRegular >= 0){
-        System.out.println("Leave applied, No of leave available: "+leaveBalanceRegular);
-        System.out.println(" ");}
-        else{
-            System.out.println("No leave available ");
-
-        }
-
+        RegularSalary regSal = new RegularSalary(leave);
+        regSal.print();
+       
     }
     else if(employeeType.equalsIgnoreCase("Contract")){
-        EmpContract empCon = new EmpContract(leave);
-        int leaveBalanceContract = execute(empCon);
-        System.out.println("Leave applied, No of contract period extended by: "+leaveBalanceContract);
-        System.out.println(" ");
+
+        ContractSalary conSal = new ContractSalary(leave);
+        conSal.print();
     }
     else {
         System.out.println("wrong input");

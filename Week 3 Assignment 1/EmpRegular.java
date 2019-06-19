@@ -1,15 +1,15 @@
 class EmpRegular extends Employee{
     private int noOfDays = 20;
-    private int vacation;
+    private int leave;
 
-    public EmpRegular(int vacation){
-        this.vacation = vacation;
+    public EmpRegular(int leave){
+        this.leave = leave;
     }
     @Override
     public int vacation(){
-        if(vacation >  noOfDays){
-        return noOfDays - vacation;}
-        else
-        return 0;
+        //if(leave >  noOfDays){
+        return noOfDays - leave;//}
+       // else
+       // return 0;
     }
 }

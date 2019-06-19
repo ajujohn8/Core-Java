@@ -1,14 +1,14 @@
 class EmpContract extends Employee{
 
     private int noOfDays = 60;
-    private int vacation;
+    private int leave;
 
-    public EmpContract( int vacation){
-        this.vacation = vacation;
+    public EmpContract( int leave){
+        this.leave = leave;
     }
     @Override
     public int vacation(){
-        return noOfDays + vacation;
+        return noOfDays + leave;
     }
 
 
