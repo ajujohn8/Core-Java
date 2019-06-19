@@ -18,7 +18,7 @@ public class EmployeeDetails{
             System.out.println("Your Employee: "+id);
             System.out.println("Your age: "+age);
             for(int index = 0; index < n; index++){
-            System.out.println("Skill: "+createSkills[index]);
+            System.out.println("Skill"+index +": " +createSkills[index]);
             }
 
             
