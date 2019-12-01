@@ -1,0 +1,118 @@
+.page {
+    height: 100vh;
+    overflow: hidden;
+}
+.board {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-basis: 100%;   
+    overflow: auto;
+    padding: 103px 20px 265px;
+}
+
+.title-threedots-main{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.board .bulletin-container {
+    /* height: 184px;   */
+    height:auto;
+    width: 213px;
+    background-color: #D3D8D8;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+.task-lists-wrapper{
+    height:auto;
+    width: 213px;
+    background-color: #D3D8D8;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.input-box-edit{
+    display: flex;
+    justify-content: space-between; 
+    padding-right:-1px;
+}
+    
+.pencil{
+    opacity: 0;
+}
+    
+.input-bar:hover  {
+    opacity: 0.75;
+}
+    
+.input-bar:hover .pencil {
+    opacity: 0.75;
+}
+    
+.input-bar:hover .pencil:hover {
+    opacity: 0.5;
+}
+    
+
+.bulletin-container .ongoing-bulletin-task{
+    height: 219px;
+    background-color: #D3D8D8;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 4px; 
+}
+
+
+ .big-input-box{
+    display: block;
+    width: 190px;
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    font-size: 1em;
+    resize: none;
+}
+
+
+.bulletin-container .test-deploy-bulletin-task{
+    height: 93px;
+    background-color: #D3D8D8;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 4px; 
+}
+
+.bulletin-container .done-bulletin-task{
+    height: 34px;
+    width: 210px;
+    background-color: #D3D8D8;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+.bulletin-container .done-bulletin-task .title-task-done{
+    font-weight: bold;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.bulletin-container .only-bulletin-task{
+    height: 18px;
+    width: 210px;
+    background-color: #D3D8D8;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.bulletin-container .onlylist-bulletin-task{
+    height: 129px;
+    width: 210px;
+    background-color: #D3D8D8;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
