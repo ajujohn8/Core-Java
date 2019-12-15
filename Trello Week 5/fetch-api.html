@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .products{
+                overflow:auto;
+            }
+            .product {
+                float: left;
+                width: 30%;
+                padding: 20px;
+                border: 1px solid crimson;
+                margin-right: 5%;
+            }
+
+            .product:nth-child(3n) {
+                margin-right: 0;
+            }
+        </style>
+</head>
+<body>
+        <div class="products">
+                
+                </div>
+    
+  <script>
+    async function doCall(){
+        let responce=await fetch('https://awesome-store-server.herokuapp.com/products')
+if(responce.ststus >=400){
+    throw new Error('Something went wrong');
+
+}else{
+    return responce.json();
+}}
+doCall()
+    .then(function(products){
+        console.log(products);
+
+        products.forEach(product =>{
+            const template =`<div class ="product">
+                
+                <img src="${product.imageUrl} "/>
+                <div>
+                    Name: ${product.name}
+                </div>
+            </div>
+        </div>`;
+        document.querySelector('.products').innerHTML += template;
+
+
+        });
+    })
+    .catch(function(error){
+        console.log(error.message);
+    });
+        </script>
+</body>
+</html>

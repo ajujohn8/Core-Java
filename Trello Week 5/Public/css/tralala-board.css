@@ -1,0 +1,185 @@
+.page {
+    height: 100vh;
+    overflow: hidden;
+}
+.board {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-basis: 100%;   
+    overflow: auto;
+    padding: 103px 20px 265px;
+}
+
+.title-threedots-main{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.board .bulletin-container {
+    /* height: 184px;   */
+    height:auto;
+    width: 213px;
+    background-color: #D3D8D8;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+/* .task-lists-wrapper{
+    height:auto;
+    width: 213px;
+    background-color: #D3D8D8;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 4px;
+} */
+.add-list {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    background-color: rgba( 240, 240, 240, 0.9 );
+}
+
+.input-box-edit{
+    display: flex;
+    justify-content: space-between; 
+    padding-right:-1px;
+}
+    
+.pencil{
+    opacity: 0;
+}
+    
+.input-bar:hover  {
+    opacity: 0.75;
+}
+    
+.input-bar:hover .pencil {
+    opacity: 0.75;
+}
+    
+.input-bar:hover .pencil:hover {
+    opacity: 0.5;
+}
+    
+
+.bulletin-container .ongoing-bulletin-task{
+    height: 219px;
+    background-color: #D3D8D8;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 4px; 
+}
+
+
+ .big-input-box{
+    display: block;
+    width: 190px;
+    border-radius: 4px;
+    padding: 10px;
+    border: none;
+    font-size: 1em;
+    resize: none;
+    outline: none;
+}
+
+
+.bulletin-container .test-deploy-bulletin-task{
+    height: 93px;
+    background-color: #D3D8D8;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 4px; 
+}
+
+.bulletin-container .done-bulletin-task{
+    height: 34px;
+    width: 210px;
+    background-color: #D3D8D8;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+.bulletin-container .done-bulletin-task .title-task-done{
+    font-weight: bold;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.bulletin-container .only-bulletin-task{
+    height: 18px;
+    width: 210px;
+    background-color: #D3D8D8;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.bulletin-container .onlylist-bulletin-task{
+    height: 129px;
+    width: 210px;
+    background-color: #D3D8D8;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: #f9f9f9;
+    right: 17px;
+    top: 39px;
+    min-width: 10%;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.task-lists-wrapper{
+    color: #555;
+    display: flex;
+    flex-basis: 100%;
+
+}
+
+.add-card-form-actions, .add-list-form-actions,.task-edit-form, .task-edit-form-actions {
+    margin-bottom:10px;
+    
+}
+.add-card-button, .add-list-button, .edit-task-button {
+    margin-right: 8px;
+    border-radius: 4px;
+}
+.add-task-form-actions {
+    margin: 10px 0;
+}
+.add-card-form-actions, .add-list-form-actions {
+    margin: 10px 0;
+}
+.add-card-form-actions, .add-list-form-actions {
+    margin: 10px 0;
+}
+
+.add-card-button, .add-list-button {
+    margin-right: 8px;
+}
+
+.add-card-cancel, .add-list-cancel {
+    position: relative;
+    top: 3px;
+}
+
+.input-box.selected {
+    background-color: rgb( 64, 144, 192 );
+    color: white;  
+}

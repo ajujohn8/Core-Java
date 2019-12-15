@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    
+</head>
+<body>
+        <form>
+                <div>
+                    Name: <input type="text" name="name" id="name" />
+                </div>
+                <div>
+                    Code: <input type="text" name="code" id="code" />
+                </div>
+                <div>
+                    Release Date: <input type="text" name="releaseDate"id="releaseDate" />
+                </div>
+                <div>
+                    Description: <input type="text" name="description"id="description" />
+                </div>
+    <div>
+                    Price: <input type="text" name="price" id="price" />
+                </div>
+                <div>
+                    Star Rating: <input type="text" name="starRating" id="starRating" />
+                </div>
+                <div>
+                    Image URL: <input type="text" name="imageUrl" id="imageUrl" />
+                </div>
+                <button>Add product</button>
+            </form>
+    
+            <script>
+            document.querySelector('form;).addEventListener('sumit', function(event){
+                event.preventDefault();
+                fetch('https://awesome-store-server.herokuapp.com/products
+')
+            })
+            </script>
+    
+</body>
+</html>

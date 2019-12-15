@@ -1,0 +1,65 @@
+textarea{
+    resize:none;
+}
+
+.hide{
+    display: none;
+}
+
+.font-container{
+    color: #555555;;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    }
+
+.title-task{
+    font-weight: bold;
+    padding: 5px 0px 7px 5px;
+}
+
+.input-box{
+    margin-top: 14px;
+    border: none;   
+    padding: 10px;
+    height: 14px;
+    width: 190px;
+    border-radius: 4px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.btn {
+    height: 36px;
+    width: 101px;
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    text-align: center;
+}
+    
+.btn-inline {
+    display: inline-block;
+}
+    
+.btn-primary {
+    background-color: olive;
+    color: white;
+}
+
+.button-x{
+    padding-top: 15px;
+    display: flex;
+    }
+.button-x-font{
+    font-size: 28px;
+    color: rgb(85, 85, 85);
+    padding-left: 10px;
+    padding-top: 3px;
+    border-color: transparent;;
+}
+
+.pointer{   
+    cursor: pointer; 
+}
+    
