@@ -46,9 +46,6 @@ export default class Board extends Component {
                         <a href="#" class="board-show-menu-item move-selected-task pointer">
                         <i class="fas fa-arrows-alt"></i>
                         Move selected task
-                        <select>
-                            ${this.taskLists.reduce( ( acc, taskList ) => acc + `<option>${taskList.name}`, `` )}
-                        </select>
                         </a>
                     </div>
                                                                             
