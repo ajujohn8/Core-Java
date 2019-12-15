@@ -25,13 +25,19 @@
     padding: 10px;
     border-radius: 4px;
 }
-.task-lists-wrapper{
+/* .task-lists-wrapper{
     height:auto;
     width: 213px;
     background-color: #D3D8D8;
     margin-right: 10px;
     padding: 10px;
     border-radius: 4px;
+} */
+.add-list {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    background-color: rgba( 240, 240, 240, 0.9 );
 }
 
 .input-box-edit{
@@ -74,6 +80,7 @@
     border: 1px solid lightgray;
     font-size: 1em;
     resize: none;
+    outline: none;
 }
 
 
@@ -115,4 +122,62 @@
     margin-right: 10px;
     padding: 10px;
     border-radius: 4px;
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: #f9f9f9;
+    right: 17px;
+    top: 39px;
+    min-width: 10%;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.task-lists-wrapper{
+    color: #555;
+    display: flex;
+    flex-basis: 100%;
+
+}
+
+.add-card-form-actions, .add-list-form-actions,.task-edit-form, .task-edit-form-actions {
+    margin-bottom:10px;
+    
+}
+.add-card-button, .add-list-button, .edit-task-button {
+    margin-right: 8px;
+    border-radius: 4px;
+}
+.add-task-form-actions {
+    margin: 10px 0;
+}
+.add-card-form-actions, .add-list-form-actions {
+    margin: 10px 0;
+}
+.add-card-form-actions, .add-list-form-actions {
+    margin: 10px 0;
+}
+
+.add-card-button, .add-list-button {
+    margin-right: 8px;
+}
+
+.add-card-cancel, .add-list-cancel {
+    position: relative;
+    top: 3px;
+}
+.add-list-message{
+    width: 135px;
 }
